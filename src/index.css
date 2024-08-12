@@ -1,0 +1,100 @@
+/* @import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css'; */
+
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth !important;
+}
+
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .bg-gradient-animated {
+    background: linear-gradient(270deg, #0184db, #12416f, #2980b9, #017191);
+    background-size: 600% 600%;
+    animation:  gradient-animation 20s ease infinite;
+    /* color: #075985; */
+  }
+  
+
+  .gradient-text {
+    /* background: linear-gradient(to right, #b1e2e2, #61d7fe); */
+    background: linear-gradient(to right, #00c6c6, #00698d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .home-screen {
+    position: relative;
+    background-image: url("./assets/bg-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+  }
+  
+  .home-screen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    pointer-events: none; 
+  }
+
+  .swiper-slide {
+    transition: transform 0.5s ease;
+  }
+  
+  .swiper-slide-active {
+    transform: scale(1.1);
+  }
+
+/* .blur-effect::before,
+.blur-effect::after {
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 10rem;
+  position: absolute;
+  width: 50%;
+  z-index: 2;
+}
+
+.blur-effect::before {
+  bottom: 0;
+}
+
+ .blur-effect::after {
+  bottom: 0;
+  transform: rotateZ(270deg);
+}  */
+  
+ 
