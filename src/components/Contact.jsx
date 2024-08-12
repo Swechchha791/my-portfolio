@@ -101,6 +101,23 @@ const Contact = () => {
         />
       </motion.h2>
 
+      {/* <motion.h2
+        className="text-4xl font-extrabold text-sky-800 text-center my-16 relative"
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        }}
+      >
+        Contact me
+        <motion.div
+          variants={borderVariants}
+          className="absolute left-1/2 transform -translate-x-1/2 bottom-0 h-1 bg-sky-800"
+          style={{ marginTop: "-10px", width: "100%" }}
+        />
+      </motion.h2> */}
+
       <motion.div
         variants={containerVariants}
         initial="hidden"

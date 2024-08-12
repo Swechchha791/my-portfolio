@@ -40,7 +40,7 @@ const Skills = () => {
     },
     {
       title: "Tools",
-      skills: ["Git", "Github", "Webpack", "Jira"],
+      skills: ["Git", "Github", "VSCode", "Webpack"],
     },
     {
       title: "Other",

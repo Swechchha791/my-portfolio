@@ -43,7 +43,7 @@ const About = () => {
       id="about"
     >
       <motion.h2
-        className="text-4xl font-extrabold text-sky-800 text-center my-10 relative"
+        className="text-4xl font-extrabold text-sky-800 text-center my-16 relative"
         initial="hidden"
         animate={controls}
         variants={{
