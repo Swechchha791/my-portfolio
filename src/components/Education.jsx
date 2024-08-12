@@ -9,10 +9,9 @@ const educationData = [
     institution: "Allahabad state University",
     fieldOfStudy: "Computer Application",
     location: "Prayagraj, Uttar Pradesh",
-    graduationDate: "October 22",
-    relevantCoursework: ["Fundamentals of Computer", "Web Development"],
+    graduationDate: "December 2022",
+    cgpa: 8.5,
   },
-  // Add more education entries as needed
 ];
 
 const Education = () => {
@@ -105,13 +104,13 @@ const Education = () => {
             </p>
             {/* <p className="mt-2">Honors: {education.honors}</p> */}
             <ul className="mt-2">
-              <p className="mt-2">Subjects:</p>
-              {education.relevantCoursework.map((course, i) => (
+              <p className="mt-2">CGPA: {education.cgpa}</p>
+              {/* {education.relevantCoursework.map((course, i) => (
                 <span key={i} className="text-sm text-gray-300">
                   {course}
                   {", "}
                 </span>
-              ))}
+              ))} */}
             </ul>
           </motion.div>
         ))}

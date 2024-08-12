@@ -18,8 +18,8 @@ const projects = [
     name: "My-portfolio-website",
     description: "This is a short description of project 1.",
     images: [project1_img],
-    codeLink: "https://github.com/Swechchha791",
-    previewLink: "https://github.com/Swechchha791",
+    codeLink: "https://github.com/Swechchha791/my-portfolio",
+    previewLink: "https://swechchha-portfolio.vercel.app",
   },
   {
     id: 2,

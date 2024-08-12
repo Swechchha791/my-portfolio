@@ -97,19 +97,21 @@ const About = () => {
             My name is <strong className="text-sky-800">Swechchha</strong>, a
             dedicated{" "}
             <strong className="text-sky-800">React frontend developer</strong>{" "}
-            with a strong passion for creating dynamic and responsive web
-            applications. My journey in web development has been driven by a
-            relentless desire to learn and refine my skills. Through various
-            projects, I have grown both personally and professionally, enhancing
-            my expertise and adaptability.
+            with a passion for crafting dynamic and responsive web applications.
+            My journey has been fueled by a relentless drive to learn and
+            innovate. After graduating, I had the privilege of completing the
+            Springboard Summer Internship with Infosys Private Limited, where I
+            honed my skills and gained a deeper understanding of web
+            technologies.
             <br />
-            Currently, I am actively seeking opportunities to contribute to
-            teams and projects, aiming to deepen my knowledge and learn from
-            experienced professionals in the field. I am eager to apply my
-            skills in real-world scenarios and contribute to impactful projects
-            that challenge and inspire me. My commitment to continuous
-            improvement and my enthusiasm for web development make me a valuable
-            addition to any team.
+            Following a brief career gap, I have fully immersed myself in
+            upskilling with a focus on MERN development, aiming to master the
+            full stack. I am now eager to bring my expertise to real-world
+            projects, contributing to teams where I can both learn from seasoned
+            professionals and make a meaningful impact. My commitment to
+            continuous improvement, coupled with my enthusiasm for web
+            development, positions me as a valuable asset to any
+            forward-thinking team.
           </motion.p>
         </div>
       </div>
