@@ -59,7 +59,7 @@ const About = () => {
         />
       </motion.h2>
 
-      <div className="flex flex-col md:flex-row items-center justify-between mx-8">
+      <div className="flex flex-col lg:flex-row items-center justify-between mx-8">
         <motion.div
           ref={ref}
           className="w-full h-full mix-blend-multiply" //mt-4 md:mt-0 md:ml-8

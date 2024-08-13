@@ -41,7 +41,7 @@ const Home = () => {
           animate={controls}
           // Apply variants for the animation
           variants={boxVariants}
-          className="text-white md:mr-10 absolute py-20 px-40 text-center sm:mt-10"
+          className="text-white lg:mr-10 absolute py-20 px-40 text-center sm:mt-10"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
         >
           <h1 className="text-6xl font-bold gradient-text">

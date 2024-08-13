@@ -108,7 +108,7 @@ const Experience = () => {
         />
       </motion.h2>
 
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         <motion.div
           className="relative"
           initial="hidden"

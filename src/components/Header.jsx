@@ -22,7 +22,7 @@ const Header = () => {
       </motion.div>
 
       <motion.nav
-        className="hidden md:flex space-x-4 mr-10"
+        className="hidden lg:flex space-x-4 mr-10"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
@@ -54,7 +54,7 @@ const Header = () => {
         onClick={toggleMenu}
         style={{ overflowX: "hidden" }} // Ensure no horizontal overflow
       >
-        <div className="p-4 h-1/2 flex flex-col justify-center items-center space-y-4 menu-content">
+        <div className="p-4 h-1/2 flex flex-col justify-center items-center space-y-4 menu-content mt-32">
           {[
             "Home",
             "About",
@@ -76,7 +76,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="md:hidden mr-14 pb-14">
+      <div className="lg:hidden mr-14 pb-14">
         <button
           onClick={toggleMenu}
           className="text-white focus:outline-none z-50 fixed bg-black opacity-75 p-4 flex items-center justify-center rounded-full font-bold shadow-3xl-sky"

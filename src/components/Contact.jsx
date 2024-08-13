@@ -91,7 +91,7 @@ const Contact = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
-        className="text-4xl font-extrabold text-sky-800 m-20 text-center relative"
+        className="text-4xl font-extrabold text-sky-800 my-20 text-center relative"
       >
         Contact me
         <motion.div
