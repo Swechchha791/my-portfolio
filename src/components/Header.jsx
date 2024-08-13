@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="p-5 z-40 bg-black top-0 left-0 w-full flex justify-between items-center rounded transition-colors duration-300">
+    <header className="p-5 z-40 bg-black top-0 left-0 w-full flex justify-between items-center transition-colors duration-300">
       <motion.div
         className=""
         initial={{ opacity: 0, y: -20 }}

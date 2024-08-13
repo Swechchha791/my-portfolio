@@ -33,7 +33,7 @@ const About = () => {
   return (
     <motion.section
       ref={ref}
-      className="my-20 py-8 px-4"
+      className="my-20 py-8 px-2"
       initial="hidden"
       animate={controls}
       variants={{
@@ -83,9 +83,9 @@ const About = () => {
             }}
           />
         </motion.div>
-        <div className="md:mr-8">
+        <div className="lg:mr-8">
           <motion.p
-            className="mt-12 md:px-8 md:mt-0 text-justify text-xl font-medium text-slate-500 leading-10 tracking-wide"
+            className="mt-12 lg:px-8 md:mt-0 text-xl font-medium text-slate-500 leading-10 tracking-wider text-justify"
             style={{ textIndent: "2em" }}
             initial="hidden"
             animate={controls}
