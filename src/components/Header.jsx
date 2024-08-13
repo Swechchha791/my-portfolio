@@ -50,7 +50,7 @@ const Header = () => {
       <div
         className={`fixed inset-0 bg-black opacity-75 z-50 transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-500 md:hidden`}
+        } transition-transform duration-500 lg:hidden`}
         onClick={toggleMenu}
         style={{ overflowX: "hidden" }} // Ensure no horizontal overflow
       >
