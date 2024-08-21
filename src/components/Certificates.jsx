@@ -3,18 +3,21 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import internCert from "../assets/internCert.png";
 import PragatiCert from "../assets/PragatiCert.png";
+import PragatiPdf from "../assets/PragatiCert.pdf";
 
 const certificates = [
   {
     title: "Infosys Springboard Summer Internship Pragram",
     organization: "Infosys Limited",
     image: internCert,
+    pdf: internCert,
     description: `Project: EasyQ- AI Based Question and Answer generator tool Key. Technologies:- Angular, NodeJs,MongoDB, ExpressJs, TypeScript. Focused on developing Testimonial and About Us pages for a real-life project and collaborated with team members and experienced mentors.`,
   },
   {
     title: "Pragati: Path to Future - Cohort 1",
     organization: "Infosys Limited",
     image: PragatiCert,
+    pdf: PragatiPdf,
     description: `The Pragati Program is a transformative initiative designed specifically for women, empowering them with essential skills and personal development tools. It focuses on boosting confidence and creating new opportunities for success.`,
   },
 ];
@@ -46,7 +49,7 @@ const Certificates = () => {
     },
   };
   return (
-    <section id="certificates" className="py-20 bg-slate-200">
+    <section id="certificates" className="py-16 bg-slate-200">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-4xl font-extrabold text-sky-800 my-20 text-center relative"
@@ -70,7 +73,7 @@ const Certificates = () => {
           {certificates.map((certificate, index) => (
             <motion.div
               key={index}
-              className="bg-sky-50 shadow-lg p-6 hover:shadow-2xl transition duration-500 rounded-3xl border-l-8 border-sky-900"
+              className="bg-sky-50 shadow-lg px-6 py-12 hover:shadow-2xl transition duration-500 rounded-3xl border-l-8 border-sky-900"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -88,7 +91,7 @@ const Certificates = () => {
               <p className="text-gray-500 mb-4">{certificate.description}</p>
               {certificate.image && (
                 <a
-                  href={certificate.image}
+                  href={certificate.pdf}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sky-700 font-semibold hover:underline"

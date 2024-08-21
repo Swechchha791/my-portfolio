@@ -96,7 +96,7 @@ const About = () => {
             }}
           >
             My name is <strong className="text-sky-800">Swechchha</strong>, a
-            dedicated{" "}
+            Passionate{" "}
             <strong className="text-sky-800">React frontend developer</strong>{" "}
             with a passion for crafting dynamic and responsive web applications.
             My journey has been fueled by a relentless drive to learn and
