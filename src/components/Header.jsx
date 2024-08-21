@@ -34,6 +34,7 @@ const Header = () => {
           "Projects",
           "Experience",
           "Education",
+          "Certificates",
           "Contact",
         ].map((item) => (
           <a
@@ -62,6 +63,7 @@ const Header = () => {
             "Projects",
             "Experience",
             "Education",
+            "Certificates",
             "Contact",
           ].map((item) => (
             <a

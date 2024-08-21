@@ -8,6 +8,7 @@ import ProjectSection from "./components/projectSection";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import Certificates from "./components/Certificates";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <ProjectSection />
         <Experience />
         <Education />
+        <Certificates />
         <Contact />
       </main>
       <footer className="p-4 bg-gray-300 dark:bg-gray-800 text-center">

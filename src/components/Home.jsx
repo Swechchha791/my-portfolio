@@ -41,7 +41,7 @@ const Home = () => {
           animate={controls}
           // Apply variants for the animation
           variants={boxVariants}
-          className="text-white lg:mr-10 absolute py-20 px-40 text-center sm:mt-10"
+          className="text-white lg:mr-10 absolute py-20 px-40 text-center "
           style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
         >
           <h1 className="text-6xl font-bold gradient-text">
@@ -59,7 +59,9 @@ const Home = () => {
           <div className="mt-10 transition-all duration-1000 hover:scale-125">
             <a
               href={resume}
-              download="Swechchha_Resume.pdf"
+              // download="Swechchha_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-4 py-2 text-white rounded-lg border-2 border-sky-500 text-md shadow-3xl-sky hover:bg-gradient-to-tl from-sky-400 from-10% via-sky-600 via-30% to-sky-400 to-90% "
             >
               Download Resume

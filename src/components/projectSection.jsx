@@ -16,7 +16,7 @@ const projects = [
   {
     id: 1,
     name: "My-portfolio-website",
-    description: "This is a short description of project 1.",
+    description: "My portfolio website created using reactJs and tailwind CSS",
     images: [project1_img],
     codeLink: "https://github.com/Swechchha791/my-portfolio",
     previewLink: "https://swechchha-portfolio.vercel.app",
@@ -55,14 +55,14 @@ const projects = [
     codeLink: "https://github.com/Swechchha791/Guessing-number-game",
     previewLink: "https://guessing-number-game-nine.vercel.app",
   },
-  {
-    id: 6,
-    name: "Image-Searcher",
-    description: "A static website where you can search your desired images",
-    images: [project6_img],
-    codeLink: "https://github.com/Swechchha791/Search-desired-images",
-    previewLink: "https://search-desired-images.vercel.app",
-  },
+  // {
+  //   id: 6,
+  //   name: "Image-Searcher",
+  //   description: "A static website where you can search your desired images",
+  //   images: [project6_img],
+  //   codeLink: "https://github.com/Swechchha791/Search-desired-images",
+  //   previewLink: "https://search-desired-images.vercel.app",
+  // },
 ];
 
 const ProjectSection = () => {

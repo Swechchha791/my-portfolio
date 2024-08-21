@@ -1,10 +1,13 @@
-import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import {
   AiOutlineMail,
   AiFillLinkedin,
   AiOutlineWhatsApp,
   AiFillInstagram,
+  AiFillGithub,
 } from "react-icons/ai";
 // import emailjs from "emailjs-com";
 import emailjs from "@emailjs/browser";
@@ -15,6 +18,20 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
 
   // console.log(USER_ID);
 
@@ -75,7 +92,7 @@ const Contact = () => {
 
   const borderVariants = {
     hidden: { width: 0 },
-    show: {
+    visible: {
       width: "150px",
       transition: {
         type: "spring",
@@ -88,10 +105,14 @@ const Contact = () => {
   return (
     <section className="my-10 py-8" id="contact">
       <motion.h2
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="show"
         className="text-4xl font-extrabold text-sky-800 my-20 text-center relative"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { scale: 0.5, opacity: 0 },
+          visible: { scale: 1, opacity: 1, transition: { duration: 2 } },
+        }}
       >
         Contact me
         <motion.div
@@ -207,13 +228,13 @@ const Contact = () => {
             </a>
             {/* Instagram link */}
             <a
-              href="https://social-hub-app.vercel.app/Swechchha"
+              href="https://github.com/Swechchha791"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center px-20 py-2 bg-pink-100 hover:bg-pink-300 rounded-3xl transition-all duration-700 shadow-xl"
+              className="flex items-center px-20 py-2 bg-gray-200 hover:bg-gray-400 rounded-3xl transition-all duration-700 shadow-xl"
             >
-              <AiFillInstagram className="text-3xl mr-2 text-pink-700" />
-              <span>Social-hub</span>
+              <AiFillGithub className="text-3xl mr-2 text-slate-700" />
+              <span>Github</span>
             </a>
             {/* Linkedin link */}
             <a

@@ -82,7 +82,7 @@ const Education = () => {
         />
       </motion.h2>
 
-      <div className="relative flex md:flex-row flex-col items-center justify-center gap-12 bg-indigo-950 py-10 px-6 font-medium">
+      <div className="relative flex md:flex-row flex-col items-center justify-center gap-12 bg-sky-900 py-10 px-6 font-medium">
         {/* <Slider {...sliderSettings}> */}
         {educationData.map((education, index) => (
           <motion.div

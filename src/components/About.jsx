@@ -59,7 +59,7 @@ const About = () => {
         />
       </motion.h2>
 
-      <div className="flex flex-col lg:flex-row items-center justify-between mx-8">
+      <div className="flex flex-col lg:flex-row items-center justify-around mx-4">
         <motion.div
           ref={ref}
           className="w-full h-full mix-blend-multiply" //mt-4 md:mt-0 md:ml-8
@@ -83,9 +83,10 @@ const About = () => {
             }}
           />
         </motion.div>
+
         <div className="lg:mr-8">
           <motion.p
-            className="mt-12 lg:px-8 md:mt-0 text-xl font-medium text-slate-500 leading-10 tracking-wider text-justify"
+            className="mt-12 lg:px-8 md:mt-0 text-lg font-medium text-slate-500 leading-10 tracking-wider lg:text-justify text-left"
             style={{ textIndent: "2em" }}
             initial="hidden"
             animate={controls}
