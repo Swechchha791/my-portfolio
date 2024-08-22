@@ -238,7 +238,7 @@ const Contact = () => {
             </a>
             {/* Linkedin link */}
             <a
-              href="#"
+              href="https://www.linkedin.com/in/km-swechchha-7495a0324"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center px-20 py-2 bg-blue-100 hover:bg-blue-300 rounded-3xl transition-all duration-700 shadow-xl"
