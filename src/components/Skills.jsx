@@ -24,32 +24,49 @@ const Skills = () => {
 
   const sections = [
     {
-      title: "Frontend Skills",
+      title: "Frontend",
       skills: [
         "HTML5",
         "CSS3",
-        "JavaScript",
+        "JavaScript(ES6+)",
         "ReactJS",
         "Bootstrap",
         "Tailwind CSS",
+        "SASS",
+        "Redux",
+        "Chakra UI",
       ],
     },
     {
-      title: "Backend Skills",
-      skills: ["Node.js", "Express.js", "MongoDB", "SQL"],
+      title: "Backend",
+      skills: [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "SQL",
+        "REST APIs",
+        "Microservices Architecture",
+      ],
     },
     {
-      title: "Tools",
-      skills: ["Git", "Github", "VSCode", "Webpack"],
+      title: "DevOps",
+      skills: ["CI/CD-Jenkins", "AWS", "Git", "GitHub"],
+    },
+    {
+      title: "Testing",
+      skills: [" Webpack", "Cypress", "Postman (for API testing)"],
+    },
+    {
+      title: "Authentication",
+      skills: ["JWT", "Passport.js", "Socket.io"],
     },
     {
       title: "Other",
       skills: [
         "DSA Fundamental using java",
-        "TypeScript",
-        "Redux",
-        "Next.js",
+        " Agile Methodologies-Scrum",
         "SDLC",
+        "VSCode",
       ],
     },
   ];

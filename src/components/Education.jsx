@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 const educationData = [
   {
@@ -10,7 +10,7 @@ const educationData = [
     fieldOfStudy: "Computer Application",
     location: "Prayagraj, Uttar Pradesh",
     graduationDate: "December 2022",
-    cgpa: 8.5,
+    cgpa: "8.5 CGPA",
   },
 ];
 
@@ -104,7 +104,7 @@ const Education = () => {
             </p>
             {/* <p className="mt-2">Honors: {education.honors}</p> */}
             <ul className="mt-2">
-              <p className="mt-2">CGPA: {education.cgpa}</p>
+              <p className="mt-2">Grad: {education.cgpa}</p>
               {/* {education.relevantCoursework.map((course, i) => (
                 <span key={i} className="text-sm text-gray-300">
                   {course}
