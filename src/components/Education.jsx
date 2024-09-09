@@ -104,7 +104,7 @@ const Education = () => {
             </p>
             {/* <p className="mt-2">Honors: {education.honors}</p> */}
             <ul className="mt-2">
-              <p className="mt-2">Grad: {education.cgpa}</p>
+              <p className="mt-2">Grade: {education.cgpa}</p>
               {/* {education.relevantCoursework.map((course, i) => (
                 <span key={i} className="text-sm text-gray-300">
                   {course}
