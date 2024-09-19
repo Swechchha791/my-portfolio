@@ -1,12 +1,12 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import {
   AiOutlineMail,
   AiFillLinkedin,
-  AiOutlineWhatsApp,
-  AiFillInstagram,
+  // AiOutlineWhatsApp,
+  // AiFillInstagram,
   AiFillGithub,
 } from "react-icons/ai";
 // import emailjs from "emailjs-com";
@@ -50,7 +50,7 @@ const Contact = () => {
 
     emailjs
       .send(VITE_SERVICE_ID, VITE_TEMPLATE_ID, templateParams, VITE_USER_ID)
-      .then((response) => {
+      .then(() => {
         // console.log(response);
         alert("Message sent Successfully!");
         // form.current.reset();
@@ -216,17 +216,8 @@ const Contact = () => {
               <AiOutlineMail className="text-3xl mr-2 text-red-700" />
               <span>Gmail</span>
             </a>
-            {/* Whatsapp link */}
-            <a
-              href="https://wa.me/9198729924"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center  px-20 py-2 bg-green-100 hover:bg-green-300 rounded-3xl transition-all duration-700 shadow-xl"
-            >
-              <AiOutlineWhatsApp className="text-3xl mr-2 text-green-700" />
-              <span>Whatsapp</span>
-            </a>
-            {/* Instagram link */}
+
+            {/* Github link */}
             <a
               href="https://github.com/Swechchha791"
               target="_blank"
