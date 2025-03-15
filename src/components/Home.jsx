@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import resume from "../assets/my-resume.pdf";
+// import resume from "../assets/my-resume.pdf";
 
 const Home = () => {
   // useAnimation hook to control animations
@@ -45,7 +45,7 @@ const Home = () => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
         >
           <h1 className="text-6xl font-bold gradient-text">
-            Hi, I'm Swechchha
+            {`Hi, I'm Swechchha`}
           </h1>
           <p className="text-2xl mt-4 font-bold">
             A Passionate React Frontend Developer
@@ -58,7 +58,7 @@ const Home = () => {
           {/* Download Resume Button */}
           <div className="mt-10 transition-all duration-1000 hover:scale-125">
             <a
-              href={resume}
+              href="#"
               // download="Swechchha_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
